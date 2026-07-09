@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "check_count": 59,
+  "failed": 0,
+  "failures": [],
+  "stage_id": "1013R_R223M_P4_P1_NOTE_WEIGHT_REDUCTION_AND_MARGINIZATION",
+  "teacher_focus_count": 7,
+  "downstream_impact_count": 7,
+  "full_judgement_in_ledger": true,
+  "formal_ui": "blocked"
+}
