@@ -1,0 +1,449 @@
+{
+  "stage_id": "1013R_R223M_P4_P1_NOTE_WEIGHT_REDUCTION_AND_MARGINIZATION",
+  "source_stage": "R223M-P4",
+  "default_view_policy": "teacher_reading_first",
+  "review_view_policy": "complete_notes_folded_or_appendix",
+  "events": [
+    {
+      "event_id": "event_01_remember_brush_birth",
+      "event_name": "忆一忆：毛笔的诞生",
+      "default_teacher_visible": {
+        "teacher_focus": "不要停在背工序，要把工序追问到“让哪里更好用”。",
+        "downstream_impact": "大屏：毛笔工序图 + 笔头/笔杆/笔尾圈画；学习单：我记住的毛笔工序 / 它让毛笔更好地……；评价：发现文具结构与使用关系。"
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "core_judgement": "把学生带回文具背后的传统工艺和使用智慧，建立“结构和材料服务使用”的改造前提。",
+          "high_risk": "把工序当作背诵题",
+          "suggested_action": "这一步如果没有，会影响毛笔哪里？",
+          "teacher_confirmation": "班级已经形成“文具结构为使用服务”的共同句子后"
+        },
+        "control_points_full": {
+          "observe": "学生是否能把至少一个工序和使用作用联系起来",
+          "ask_when": "学生只背名称、只说好看或回答散开时",
+          "rescue_when": "学生说不出工序作用或注意力开始下降时",
+          "screen_when": "导入后 2 分钟内；学生说不出结构位置时",
+          "component_when": "需要把工序和结构位置对应起来时",
+          "evidence_when": "学生能说出一个工序名称和一个使用作用时",
+          "proceed_when": "班级已经形成“文具结构为使用服务”的共同句子后"
+        },
+        "screen_trigger": {
+          "type": "structure_recall",
+          "content": "毛笔工序图 + 笔头/笔杆/笔尾圈画",
+          "source_event_moment": "任务释放和学生说不清工序用途时",
+          "screen_prompt": "这一步让毛笔哪里更好用？"
+        },
+        "component_trigger": [
+          {
+            "component_id": "circle_and_annotate",
+            "trigger_condition": "学生说得出工序名称但说不清结构位置",
+            "student_problem_solved": "观察散乱，不能把工序和文具结构对应",
+            "alternative_component": "teacher_quick_pointing_demo",
+            "evidence": "学生圈出或口头指出一个结构位置"
+          }
+        ],
+        "learning_sheet_trigger": {
+          "timing": "课中回忆后",
+          "field": "我记住的毛笔工序 / 它让毛笔更好地……",
+          "mode": "one_phrase_record"
+        },
+        "evidence_trigger": {
+          "output": [
+            "学习手册工序回忆",
+            "学生口头解释一个工序作用"
+          ],
+          "capture_timing": "导入收束前",
+          "assessment_item": "发现文具结构与使用关系",
+          "downstream_use": "为后续购买建议书提供“文具不是只看外观”的依据"
+        }
+      }
+    },
+    {
+      "event_id": "event_02_ten_thousand_whys",
+      "event_name": "探一探：关键的结构 / 十万个为什么",
+      "default_teacher_visible": {
+        "teacher_focus": "学生只说好看时，立刻追到“它解决了什么使用问题”。",
+        "downstream_impact": "大屏：四个为什么 + 结构圈画 + 关键词；学习单：我选择的为什么 / 我的猜想 / 我从哪里看出来；评价：能观察并说明文具结构与使用关系。"
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "core_judgement": "让学生从外观描述转向结构和功能解释，发现文具设计中隐藏的使用理由。",
+          "high_risk": "只说漂亮或不漂亮",
+          "suggested_action": "你从哪里看出来它是为了保护？",
+          "teacher_confirmation": "学生能形成“文具小地方常在解决使用问题”的共识后"
+        },
+        "control_points_full": {
+          "observe": "学生是否能用一个关键词解释一个结构",
+          "ask_when": "学生只说好看、厂家这样做或不知道时",
+          "rescue_when": "讨论变成猜答案对错或学生没有观察依据时",
+          "screen_when": "同桌交流后投屏四个为什么；出现好答案时圈出结构",
+          "component_when": "学生说不清结构位置或需要把图像和关键词对应时",
+          "evidence_when": "学生能在学习单或口头表达中用关键词解释结构时",
+          "proceed_when": "学生能形成“文具小地方常在解决使用问题”的共识后"
+        },
+        "screen_trigger": {
+          "type": "question_cluster",
+          "content": "四个为什么 + 结构圈画 + 关键词",
+          "source_event_moment": "同桌猜想后和答案收束时",
+          "screen_prompt": "这个小结构解决了什么使用问题？"
+        },
+        "component_trigger": [
+          {
+            "component_id": "circle_and_annotate",
+            "trigger_condition": "学生能说出猜想但不能指出结构依据",
+            "student_problem_solved": "不知道观察点在哪里",
+            "alternative_component": "match_cards",
+            "evidence": "结构圈画或结构词卡匹配"
+          },
+          {
+            "component_id": "match_cards",
+            "trigger_condition": "需要把结构、功能和关键词建立对应",
+            "student_problem_solved": "术语和图像关系弱",
+            "alternative_component": "teacher_keyword_board",
+            "evidence": "一条结构-功能连线和理由"
+          }
+        ],
+        "learning_sheet_trigger": {
+          "timing": "同桌交流后",
+          "field": "我选择的为什么 / 我的猜想 / 我从哪里看出来",
+          "mode": "keyword_plus_reason"
+        },
+        "evidence_trigger": {
+          "output": [
+            "十万个为什么记录",
+            "结构关键词",
+            "圈画截图或口头依据"
+          ],
+          "capture_timing": "交流会收束时",
+          "assessment_item": "能观察并说明文具结构与使用关系",
+          "downstream_use": "为使用指南中的结构观察建议提供材料"
+        }
+      }
+    },
+    {
+      "event_id": "event_03_think_like_designer",
+      "event_name": "设计会：像设计师一样思考",
+      "default_teacher_visible": {
+        "teacher_focus": "把学生的“大设计”压成“一个小问题、一个位置、一个材料”。",
+        "downstream_impact": "大屏：设计案例细节圈画 + 握/放/收/找方向；学习单：我想解决的小麻烦 / 我想到的小办法；评价：能说明设计理由。"
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "core_judgement": "把结构观察推进到设计意识，让学生明白设计是发现一个小麻烦，再想一个小办法。",
+          "high_risk": "把小巧思理解成装饰",
+          "suggested_action": "它帮谁解决了什么麻烦？",
+          "teacher_confirmation": "学生能把自己的改进想法缩成一个小问题后"
+        },
+        "control_points_full": {
+          "observe": "学生是否能说出小巧思对应的使用麻烦",
+          "ask_when": "学生只说喜欢、好玩、方便但没有对象和问题时",
+          "rescue_when": "学生想法过大或偏离本课材料条件时",
+          "screen_when": "展示设计案例和板书握、放、收、找四个方向时",
+          "component_when": "学生需要比较普通文具和有小巧思文具时",
+          "evidence_when": "学生能说出一个小巧思和一个改进方向时",
+          "proceed_when": "学生能把自己的改进想法缩成一个小问题后"
+        },
+        "screen_trigger": {
+          "type": "design_case_compare",
+          "content": "设计案例细节圈画 + 握/放/收/找方向",
+          "source_event_moment": "学生从观察转入改进想法时",
+          "screen_prompt": "这个小巧思帮谁解决了什么麻烦？"
+        },
+        "component_trigger": [
+          {
+            "component_id": "compare_two_images",
+            "trigger_condition": "学生只说喜欢或方便，无法说明差异",
+            "student_problem_solved": "不能把设计差异和使用问题联系起来",
+            "alternative_component": "say_reason_sentence_starter",
+            "evidence": "学生说出一个差异和一个使用作用"
+          },
+          {
+            "component_id": "sentence_starter",
+            "trigger_condition": "学生有想法但说不完整",
+            "student_problem_solved": "表达理由不足",
+            "alternative_component": "teacher_oral_prompt",
+            "evidence": "我这样改，是为了……"
+          }
+        ],
+        "learning_sheet_trigger": {
+          "timing": "设计会收束前",
+          "field": "我想解决的小麻烦 / 我想到的小办法",
+          "mode": "one_problem_one_solution"
+        },
+        "evidence_trigger": {
+          "output": [
+            "一个改进方向",
+            "一个小巧思理由"
+          ],
+          "capture_timing": "进入 1+1 前",
+          "assessment_item": "能说明设计理由",
+          "downstream_use": "为 1+1 小设计和 1+n 文具大变身确定任务方向"
+        }
+      }
+    },
+    {
+      "event_id": "event_04_one_plus_one_design",
+      "event_name": "试一试：1+1 合作小设计",
+      "default_teacher_visible": {
+        "teacher_focus": "只做装饰时不要否定，先追问它让文具更好看、好找，还是更好用。",
+        "downstream_impact": "大屏：一件只是装饰的作品 + 一件解决防滑/防滚/易找问题的作品；学习单：我想解决的问题 / 我用了什么材料 / 它带来的改变；评价：能和小伙伴一起合作完成学习任务。"
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "core_judgement": "用低门槛材料让学生从草图进入可操作设计，建立一个问题对应一个改进的意识。",
+          "high_risk": "只做可爱装饰，不考虑使用",
+          "suggested_action": "这个装饰让它更好拿了吗，还是更容易找到？",
+          "teacher_confirmation": "大多数学生完成低门槛尝试，并理解一个问题对应一个改进后"
+        },
+        "control_points_full": {
+          "observe": "学生是否能说出改进目的；粘土位置是否影响使用；合作是否均衡",
+          "ask_when": "学生只做装饰或说不出理由时",
+          "rescue_when": "材料固定失败、合作失衡或作品影响握笔时",
+          "screen_when": "制作 4 到 5 分钟后出现典型装饰/功能差异作品时",
+          "component_when": "需要对比半成品、提交照片或记录改进理由时",
+          "evidence_when": "学生完成一个小设计并能说出目的时",
+          "proceed_when": "大多数学生完成低门槛尝试，并理解一个问题对应一个改进后"
+        },
+        "screen_trigger": {
+          "type": "student_work_compare",
+          "content": "一件只是装饰的作品 + 一件解决防滑/防滚/易找问题的作品",
+          "source_event_moment": "学生制作 4 到 5 分钟后",
+          "screen_prompt": "哪一件解决了一个真实使用问题？"
+        },
+        "component_trigger": [
+          {
+            "component_id": "photo_submit",
+            "trigger_condition": "需要选择 2 到 3 件学生半成品投屏",
+            "student_problem_solved": "学生看不到不同方案的差异",
+            "alternative_component": "teacher_camera_projection",
+            "evidence": "1+1 小设计照片"
+          },
+          {
+            "component_id": "compare_two_images",
+            "trigger_condition": "学生只做装饰，不考虑使用问题",
+            "student_problem_solved": "好看和好用没有区分",
+            "alternative_component": "right_wrong_compare",
+            "evidence": "学生能说出哪个设计解决了什么问题"
+          },
+          {
+            "component_id": "learning_sheet_record",
+            "trigger_condition": "学生完成小设计但理由容易丢失",
+            "student_problem_solved": "过程证据缺失",
+            "alternative_component": "oral_reason_round",
+            "evidence": "我想解决的问题 / 我用了什么 / 它带来的改变"
+          }
+        ],
+        "learning_sheet_trigger": {
+          "timing": "1+1 作品完成后",
+          "field": "我想解决的问题 / 我用了什么材料 / 它带来的改变",
+          "mode": "photo_plus_short_reason"
+        },
+        "evidence_trigger": {
+          "output": [
+            "1+1 小设计照片",
+            "改进理由",
+            "合作分工痕迹"
+          ],
+          "capture_timing": "投屏对比和小结前",
+          "assessment_item": "能和小伙伴一起合作完成学习任务",
+          "downstream_use": "作为 1+n 文具大变身的材料和问题起点"
+        }
+      }
+    },
+    {
+      "event_id": "event_05_one_plus_n_transformation",
+      "event_name": "创一创：1+n 文具大变身",
+      "default_teacher_visible": {
+        "teacher_focus": "学生堆材料时，不加任务，改问“如果只能留下一个材料，你留哪个，为什么”。",
+        "downstream_impact": "大屏：盘的技法、线材/纸材/形状材料半成品、材料过多与合适材料对比；学习单：我选择的材料 / 我使用的方法 / 它解决的问题 / 我还想继续改的地方；评价：我能发现新材料特性、新使用技法。"
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "core_judgement": "把 1+1 小尝试扩展到多材料、多技法改造，并要求材料选择服务一个明确使用问题。",
+          "high_risk": "堆材料忽视使用",
+          "suggested_action": "这个材料的特性是什么？细、长、软、硬、轻、厚，哪一点帮了你？",
+          "teacher_confirmation": "作品或局部改造完成，且学生能说出材料/技法理由后"
+        },
+        "control_points_full": {
+          "observe": "学生材料是否服务使用问题；技法是否可控；时间是否失控",
+          "ask_when": "学生堆材料、功能过多或说不清材料作用时",
+          "rescue_when": "学生不会固定材料、作品变重或进度明显落后时",
+          "screen_when": "技法归纳、材料过多对比、半成品示范时",
+          "component_when": "需要技法拆解、材料选择板或拍照提交过程证据时",
+          "evidence_when": "学生能说明材料特性和解决问题的关系时",
+          "proceed_when": "作品或局部改造完成，且学生能说出材料/技法理由后"
+        },
+        "screen_trigger": {
+          "type": "technique_and_material_demo",
+          "content": "盘的技法、线材/纸材/形状材料半成品、材料过多与合适材料对比",
+          "source_event_moment": "从 1+1 迁移到 1+n、学生不会固定材料或材料堆叠时",
+          "screen_prompt": "这个材料的哪一点帮你解决了问题？"
+        },
+        "component_trigger": [
+          {
+            "component_id": "technique_step_demo",
+            "trigger_condition": "学生不会固定线材、纸材或形状材料",
+            "student_problem_solved": "有想法但操作不会做",
+            "alternative_component": "teacher_half_finished_demo",
+            "evidence": "学生能迁移一种技法完成局部改造"
+          },
+          {
+            "component_id": "material_choice_board",
+            "trigger_condition": "学生材料选择过多或不合适",
+            "student_problem_solved": "材料选择不服务使用问题",
+            "alternative_component": "remove_one_material_prompt",
+            "evidence": "学生说出保留材料的理由"
+          },
+          {
+            "component_id": "photo_submit",
+            "trigger_condition": "需要保留过程或局部改造证据",
+            "student_problem_solved": "创作过程不可见",
+            "alternative_component": "teacher_sampling_photo",
+            "evidence": "1+n 新朋友作品或局部改造照片"
+          }
+        ],
+        "learning_sheet_trigger": {
+          "timing": "1+n 创作中后段",
+          "field": "我选择的材料 / 我使用的方法 / 它解决的问题 / 我还想继续改的地方",
+          "mode": "process_reason_record"
+        },
+        "evidence_trigger": {
+          "output": [
+            "材料技法选择理由",
+            "1+n 新朋友作品",
+            "局部改造照片",
+            "学习单过程记录"
+          ],
+          "capture_timing": "中途投屏和作品完成后",
+          "assessment_item": "我能发现新材料特性、新使用技法",
+          "downstream_use": "为购买建议书和课堂使用指南提供材料选择和使用经验"
+        }
+      }
+    },
+    {
+      "event_id": "event_06_pen_friend_gallery",
+      "event_name": "笔友汇",
+      "default_teacher_visible": {
+        "teacher_focus": "同伴评价不能只说好看，必须从关键词里选一个角度。",
+        "downstream_impact": "大屏：结构、功能、材料、使用、方便、牢固、舒服、有创意词云；学习单：我的新朋友原来……我用了……现在可以…… / 我收到的建议；评价：我能在展示会中自信表达自己的想法。"
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "core_judgement": "把作品展示转化为自我评价和同伴评价，让学生用结构、功能、材料、使用等词说明改进理由。",
+          "high_risk": "选择朋友多的展示架",
+          "suggested_action": "你为什么把它放在这个展示架？",
+          "teacher_confirmation": "学生能从作品交流中提炼一条使用建议或改进建议后"
+        },
+        "control_points_full": {
+          "observe": "学生是否能用关键词说明设计理由；同伴评价是否具体友善",
+          "ask_when": "学生只说好看或选择展示架没有理由时",
+          "rescue_when": "学生胆怯、评价空泛或建议变挑毛病时",
+          "screen_when": "展示关键词词云和选取 1 到 2 件作品现场点评时",
+          "component_when": "评价空泛、需要句式或关键词支架时",
+          "evidence_when": "学生完成介绍语、同伴点评语或展示架选择理由时",
+          "proceed_when": "学生能从作品交流中提炼一条使用建议或改进建议后"
+        },
+        "screen_trigger": {
+          "type": "keyword_feedback",
+          "content": "结构、功能、材料、使用、方便、牢固、舒服、有创意词云",
+          "source_event_moment": "作品展示和同伴点评时",
+          "screen_prompt": "请选一个关键词，说说它哪里有巧思。"
+        },
+        "component_trigger": [
+          {
+            "component_id": "keyword_feedback",
+            "trigger_condition": "学生评价只说好看或可爱",
+            "student_problem_solved": "评价语言空泛",
+            "alternative_component": "sentence_starter",
+            "evidence": "一条带关键词的同伴评价"
+          },
+          {
+            "component_id": "gallery_walk",
+            "trigger_condition": "需要让学生按展示架进行分类和观察",
+            "student_problem_solved": "自我评价缺少角度",
+            "alternative_component": "teacher_selected_showcase",
+            "evidence": "展示架选择和理由"
+          }
+        ],
+        "learning_sheet_trigger": {
+          "timing": "展示前后",
+          "field": "我的新朋友原来……我用了……现在可以…… / 我收到的建议",
+          "mode": "presentation_sentence_and_peer_feedback"
+        },
+        "evidence_trigger": {
+          "output": [
+            "展示架选择",
+            "学生介绍语",
+            "同伴点评语",
+            "教师观察自信表达"
+          ],
+          "capture_timing": "笔友汇展示和点评时",
+          "assessment_item": "我能在展示会中自信表达自己的想法",
+          "downstream_use": "转化为购买文具建议书和文具课堂使用指南中的建议语言"
+        }
+      }
+    },
+    {
+      "event_id": "event_07_gift_pen_ritual",
+      "event_name": "赠笔礼",
+      "default_teacher_visible": {
+        "teacher_focus": "赠笔不是收尾热闹，必须说出“为什么送”和“怎样使用”。",
+        "downstream_impact": "大屏：赠笔语句式 + 《一年级购买文具建议书》《文具课堂使用指南》；学习单：我把它送给……因为它可以…… / 这给我的购买或使用建议是……；评价：展示会中自信表达自己的想法。"
+      },
+      "review_view_only": {
+        "xiaojiao_judgement_full": {
+          "core_judgement": "用仪式感完成情感收束，并把作品经验转化为后续建议书和使用指南的素材。",
+          "high_risk": "只关注互赠热闹",
+          "suggested_action": "你希望收到它的人怎样使用它？",
+          "teacher_confirmation": "全课收束并明确下节课整理建议书和使用指南后"
+        },
+        "control_points_full": {
+          "observe": "学生是否把赠送理由和使用建议联系起来",
+          "ask_when": "学生只说送给谁或因为好看时",
+          "rescue_when": "时间不足、现场过热或表达太简单时",
+          "screen_when": "投屏赠笔语句式和后续表现性任务标题时",
+          "component_when": "需要句式支架或收集赠笔语时",
+          "evidence_when": "学生说出可进入建议书/使用指南的一句话时",
+          "proceed_when": "全课收束并明确下节课整理建议书和使用指南后"
+        },
+        "screen_trigger": {
+          "type": "closing_sentence_and_unit_task",
+          "content": "赠笔语句式 + 《一年级购买文具建议书》《文具课堂使用指南》",
+          "source_event_moment": "赠笔表达和全课收束时",
+          "screen_prompt": "我把它送给……因为它可以……"
+        },
+        "component_trigger": [
+          {
+            "component_id": "sentence_starter",
+            "trigger_condition": "学生表达太简单或说不出理由",
+            "student_problem_solved": "情感表达没有设计理由",
+            "alternative_component": "group_one_sentence",
+            "evidence": "赠笔语"
+          },
+          {
+            "component_id": "learning_sheet_record",
+            "trigger_condition": "需要沉淀后续建议书素材",
+            "student_problem_solved": "课堂表达没有转化为单元成果素材",
+            "alternative_component": "teacher_collect_sample_quotes",
+            "evidence": "可引用的使用建议"
+          }
+        ],
+        "learning_sheet_trigger": {
+          "timing": "赠笔礼前或后",
+          "field": "我把它送给……因为它可以…… / 这给我的购买或使用建议是……",
+          "mode": "closing_sentence_capture"
+        },
+        "evidence_trigger": {
+          "output": [
+            "赠笔语",
+            "作品照片",
+            "可进入建议书和使用指南的使用建议"
+          ],
+          "capture_timing": "全课收束时",
+          "assessment_item": "展示会中自信表达自己的想法",
+          "downstream_use": "直接进入第四阶段表现性任务素材池"
+        }
+      }
+    }
+  ]
+}
