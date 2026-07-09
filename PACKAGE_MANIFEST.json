@@ -1,0 +1,97 @@
+{
+  "stage_id": "1013R_R223M_P4_P1_NOTE_WEIGHT_REDUCTION_AND_MARGINIZATION",
+  "generated_at": "2026-07-09T17:36:21",
+  "zip_sha256": "169CB15405384AAF732D76EE427DF408D229A49B990CB9AD59ED4846FFF59C92",
+  "boundary": {
+    "formal_ui": false,
+    "r97b_modified": false,
+    "frontend_backend_modified": false,
+    "runtime_connected": false,
+    "provider_model_connected": false,
+    "prompt_modified": false,
+    "database_written": false,
+    "formal_apply": false
+  },
+  "files": [
+    {
+      "path": "R223M_P4_P1_teacher_readable_process_v6.md",
+      "bytes": 11436,
+      "sha256": "6487CF6C385C16F6111DBCC4EF46E1AF229F13C5CCEA8C53C3CD102E5EF4A7EC"
+    },
+    {
+      "path": "R223M_P4_P1_teacher_readable_process_v6.html",
+      "bytes": 14663,
+      "sha256": "2408E3E6207CB5CBD9EC448582EAC8DD78746341DAE81DB71F1125542597F7D6"
+    },
+    {
+      "path": "R223M_P4_P1_margin_note_policy.md",
+      "bytes": 907,
+      "sha256": "378C2D68806B42A2F5192A0A3E1864153068D31AED61211C4008647025AB3D53"
+    },
+    {
+      "path": "R223M_P4_P1_default_vs_review_view_rules.md",
+      "bytes": 726,
+      "sha256": "74479C59272AC1290417A917F7C1CD6A862B97478285BE124767B9FC8AAE7DC8"
+    },
+    {
+      "path": "R223M_P4_P1_teacher_confirmation_summary.md",
+      "bytes": 2339,
+      "sha256": "77CAC267B04100DDBA5875C1C61B3A92C278E9CDD26D183A36537FB1C6E75C6D"
+    },
+    {
+      "path": "R223M_P4_P1_before_after_compare_with_P4.md",
+      "bytes": 700,
+      "sha256": "6744B8E4A8749A18C4849FAC71D5A4B47B955D944B8E772893D38F4C2F9D83B7"
+    },
+    {
+      "path": "R223M_P4_P1_report.md",
+      "bytes": 738,
+      "sha256": "A2379A9E611489569C1A44CADEC4010F78DA512CF5A3430C483645BED17FE9B6"
+    },
+    {
+      "path": "README_FOR_GPT_REVIEW.md",
+      "bytes": 822,
+      "sha256": "5860E2E91016BFA0D1ADAB30D41F3AD6F83E5E93569E53030C2A6952F5551A90"
+    },
+    {
+      "path": "R223M_P4_P1_marginized_review_note_ledger.json",
+      "bytes": 24335,
+      "sha256": "969C7B79823218362AF6CDD55A01AEA0B09D717E21DC8CE038DB43E833610152"
+    },
+    {
+      "path": "validate_1013R_R223M_P4_P1_note_weight_reduction.py",
+      "bytes": 5025,
+      "sha256": "398316FAE17DC738FD1BAA592DB13BD79895B550AC931B25C7287B49F2AE911E"
+    },
+    {
+      "path": "validate_1013R_R223M_P4_P1_note_weight_reduction_result.json",
+      "bytes": 246,
+      "sha256": "1A24CFE111104B76CE4347DBB5C42E4A806CE6E855115B792DC52A58B48CBCB8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 879,
+      "sha256": "DB190E94AAD225CF6ABD98C61DA43AADBD19739EE0666AA4B2B99ADE66721CE2"
+    },
+    {
+      "path": "PACKAGE_MANIFEST.json",
+      "bytes": 2956,
+      "sha256": "B68499DF01ECD61CA3F69426B0171538DAFAED62156FBE4A39176DEDBAD8A9DC"
+    },
+    {
+      "path": "ZIP_SHA256.txt",
+      "bytes": 66,
+      "sha256": "13D459ACE80EC610B548A00351C0D9232300DBE806E2E4CAF6EA67B1FBBBD458"
+    },
+    {
+      "path": "R223M_P4_P1_teacher_readable_process_v6_screenshot.png",
+      "bytes": 86196,
+      "sha256": "315AE89BB991D035EEC6DC3082D95A002D2B550F42833726CAD974909D1AADF6"
+    },
+    {
+      "path": "R223M_P4_P1_browser_smoke_result.json",
+      "bytes": 570,
+      "sha256": "3EE9A87EF7B9011694E0EAE7F982F9D7F18B0E498ABCA0D749675258523D32CD"
+    }
+  ]
+}
